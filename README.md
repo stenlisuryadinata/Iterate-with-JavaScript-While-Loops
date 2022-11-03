@@ -141,3 +141,158 @@ for(i=myArr.length-1;i>=0;i--){
 
 */
 
+/*
+let bigarr = [];
+
+let ext =9; 
+for(i=0;i<3;i++){
+  //bigarr.push([]);
+  let little = []; 
+  for(j=0;j<3; j++){
+    little.push(ext);
+    ext--;
+  }
+  bigarr.push(little);
+}
+console.log(bigarr)
+*/
+
+/*
+
+function numbers(a,b){
+  console.log(a*b);
+}
+
+numbers(3,4);
+
+function message(name){
+  console.log("Hello ",name)
+  
+}
+
+message('Oscar');
+message('Clinton');
+message('Lina');
+message('Triad');
+
+*/
+/*
+function sum(myArr){
+  let output = [];
+  for(i=0; i<myArr.length; i++ ){
+    output.push(myArr[i]+1)
+  }
+  return output;
+}
+
+let result = sum([1,2,3,4]);
+console.log(result); 
+*/
+/*
+function sum(myArr){
+  let output = [];
+  for(i=0; i<myArr.length; i++ ){
+    output.push(myArr[i]*5)
+  }
+  return output;
+}
+
+let result = sum([1,2,3,4]);
+console.log(result); 
+*/
+/*
+function reverse(arr){
+  let output = []; 
+  for(i=arr.length-1; i>=0; i--){
+    output.push(arr[i]);
+  }
+  return output;
+}
+
+let result2 = reverse([1,2,3,4,5,6,7,8,9]);
+console.log(result2);
+*/
+/*
+let arr = [1,2,3,4]; 
+
+
+function reverse(arr){
+  let output =[];
+  for(i=arr.length-1; i>=0; i--){
+    if(arr[i] === 1 ) {
+      output.push('one')
+    }
+    if(arr[i] === 2 ) {
+      output.push('two')
+    }
+    if(arr[i] === 3 ) {
+      output.push('three')
+    }
+    if(arr[i] === 4 ) {
+      output.push('four')
+    }
+    //output.pop(arr[i]);
+    //output.push(arr[i]);
+    
+  }
+  return output
+}
+
+let result= reverse([1,2,1,2]);
+console.log(result);
+*/
+/*
+function sumAll(arr){
+  let first = arr[0]; 
+  let last = arr[1]; 
+
+  if(first >last){
+    first = arr[1];
+    last = arr[0];
+  }
+
+  let output = 0; 
+  for(i=first; i <=last; i++){
+    //console.log(i);
+    output += i;
+  }
+  return output;
+}
+
+let result = sumAll([1,4]); 
+
+console.log(result);
+
+let result2 = sumAll([4,1]); 
+
+console.log(result2);
+
+*/
+/*
+function convertCtoF(celsius) {
+  let fahrenheit;
+  
+
+  fahrenheit = (celsius * (9/5))+ 32;
+  return fahrenheit;
+}
+
+let result = convertCtoF(30);
+console.log(result);
+*/
+/*
+function reverseString(str) {
+  
+  let reversedStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
+
+
+reverseString("hello");
+
+*/
+
+
