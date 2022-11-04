@@ -295,4 +295,74 @@ reverseString("hello");
 
 */
 
+/*
+function factorialize(num) {
+  
+let product = 1;
+  for(let i =2; i<=num; i++){
+    
+    product *= i;
+  }
+
+  return product;
+}
+
+let result = factorialize(5);
+console.log(result); 
+*/
+/*
+
+function truncateString(str, num) {
+  if (str.length>num){
+    return str.slice(0,num)+"...";
+  }else {
+    return str;
+
+  }
+}
+
+let result = truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+console.log(result)
+
+*/
+/*
+function getIndexToIns(arr, num) {
+  console.log(arr.sort((a,b) => a-b)); 
+
+  for(let i = 0; i<arr.length; i++){
+    //console.log(arr[i]);
+    if(arr[i]>=num) return i;
+    
+  }
+  return arr.length;
+}
+
+let result = getIndexToIns([20, 3, 5], 19);
+console.log(result);
+
+*/
+/*
+function chunkArrayInGroups(arr, size) {
+  
+  let temp =[];
+  let result =[];
+  for(let i=0; i<arr.length; i++){
+    if(i % size !== size-1) temp.push(arr[i]);
+    else {
+      temp.push(arr[i]);
+      result.push(temp);
+      temp=[];
+    }
+  }
+  if (temp.length !== 0) result.push(temp);
+  return result;
+
+}
+
+let results = chunkArrayInGroups(["a", "b", "c", "d"], 2);
+console.log(results);
+
+*/
+
 
