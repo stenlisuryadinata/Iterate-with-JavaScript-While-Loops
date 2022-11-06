@@ -364,5 +364,79 @@ let results = chunkArrayInGroups(["a", "b", "c", "d"], 2);
 console.log(results);
 
 */
+/*
+//SALES BY MATCH Hackerrank 
+function sockMerchant(n, arr){
+  let pairs = 0; 
+  let search = new Set(); 
+  for(const sock of arr){
+    if (search.has(sock)){
+      pairs ++;
+      search.delete(sock);
+    } else {
+      console.log(search.add(sock));
+    }
+  }
+  return pairs;
+}
+let result = sockMerchant(9,[10,20,20,10,10,30,50,10,20]);
+console.log(result);
+*/
+/*
+//SALES BY MATCH Hackerrank 
+function sockMerchant(n,ar){
+  let pairs = 0; 
+  let socks = {};
+  ar.forEach((sock) => {
+    //console.log(sock)
+    if(!socks[sock]){
+      socks[sock] = 0; 
+    }
+
+    socks[sock] = socks[sock] + 1;
+    
+    if(!(socks[sock] %2)){
+      
+      pairs = pairs + 1;
+      
+    }
+    });
+  return pairs;
+}
+
+let result = sockMerchant(9,[10,20,20,10,10,30,50,10,20]);
+console.log(result); 
+*/
+/*
+
+//DRAWING BOOK Hackerrank
+
+function pageCount(n,p) {
+  let totalPageTurnCountFromFront = n/2; 
+  let targetPageTurnCountFromFront = p/2;
+  let targetPageTurnCountFromBack = totalPageTurnCountFromFront 
+ - targetPageTurnCountFromFront;
+
+  return Math.min(targetPageTurnCountFromFront,targetPageTurnCountFromBack);
+};
+
+let result = pageCount(5,4);
+console.log(result);
+*/
+/*
+//DRAWING BOOK Hackerrank 
+
+function pageCount(n,p) {
+  
+  let totalPage = n/2; 
+    let frontCount = Math.floor(p/2); 
+    let backCount = Math.floor(totalPage - frontCount); 
+    return Math.min(frontCount, backCount);
+};
+
+let result = pageCount(5,4);
+console.log(result);
+
+*/
 
 
